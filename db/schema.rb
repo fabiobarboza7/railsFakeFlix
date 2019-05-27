@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_05_27_010518) do
     t.text "description"
     t.string "thumbnail_key"
     t.string "video_key"
+    t.boolean "highlighted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -67,6 +68,7 @@ ActiveRecord::Schema.define(version: 2019_05_27_010518) do
     t.string "title"
     t.text "description"
     t.string "thumbnail_key"
+    t.boolean "highlighted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "last_watched_episode_id"
